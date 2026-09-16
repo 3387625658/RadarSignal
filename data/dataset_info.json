@@ -1,0 +1,82 @@
+{
+    "seed": 2026,
+    "sample_rate_hz": 20000000,
+    "sample_points": 2048,
+    "signal_duration_s": 0.0001024,
+    "signal_duration_us": 102.39999999999999,
+    "classes": [
+        "LFM",
+        "BPSK",
+        "QPSK",
+        "LFM_BPSK",
+        "LFM_QPSK",
+        "2FSK_BPSK"
+    ],
+    "number_of_classes": 6,
+    "snr_db": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+    ],
+    "samples_per_class_per_snr": 120,
+    "samples_per_class": 1320,
+    "total_samples": 7920,
+    "split": {
+        "train": 0.7,
+        "validation": 0.15,
+        "test": 0.15
+    },
+    "split_samples": {
+        "train": 5544,
+        "validation": 1188,
+        "test": 1188
+    },
+    "parameter_ranges": {
+        "amplitude": [
+            0.8,
+            1.2
+        ],
+        "center_frequency_hz": [
+            -1500000,
+            1500000
+        ],
+        "lfm_bandwidth_hz": [
+            1000000,
+            6000000
+        ],
+        "symbol_counts": [
+            8,
+            16,
+            32
+        ],
+        "2fsk_frequency_separation_hz": [
+            800000,
+            3000000
+        ],
+        "initial_phase_rad": [
+            0,
+            6.283185307179586
+        ]
+    },
+    "param_names": [
+        "amplitude",
+        "center_freq_hz",
+        "bandwidth_hz",
+        "chirp_rate_hz_per_s",
+        "symbol_count",
+        "symbol_rate_baud",
+        "f1_hz",
+        "f2_hz",
+        "freq_sep_hz",
+        "chirp_direction",
+        "initial_phase_rad"
+    ]
+}

@@ -1,0 +1,9 @@
+# Direct dependencies from the verified local Python 3.14.6 environment.
+# PyTorch local CUDA suffix omitted for portable package resolution.
+numpy==2.5.2
+scipy==1.18.1
+matplotlib==3.11.1
+scikit-learn==1.9.1
+torch==2.13.0
+torchvision==0.28.0
+PyQt5==5.15.11

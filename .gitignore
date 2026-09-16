@@ -1,0 +1,54 @@
+# Python / caches / virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.venv/
+venv/
+env/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# IDE / personal configuration
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Generated data and model binaries (keep data/dataset_info.json)
+/data/*.npz
+*.npy
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.safetensors
+/outputs/models/
+/outputs/training/
+/check_results/
+
+# Per-sample records; retain aggregate CSVs and presentation charts
+/outputs/evaluation/*/test_predictions.csv
+/outputs/full_pipeline/full_pipeline_results.csv
+/outputs/parameter_evaluation/**/*_results.csv
+/radar_report_*.txt
+/radar_analysis_report.txt
+/outputs/reports/
+
+# Temporary files / OS
+*.tmp
+*.log
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
